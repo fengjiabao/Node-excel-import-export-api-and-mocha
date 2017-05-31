@@ -1,0 +1,29 @@
+{
+	"jsonSecretToken": "RgRjBeB6k5",
+	"databaseUrl": {
+		"development": "mongodb://localhost/curve_main",
+		"test": "mongodb://localhost/curve_test"
+	},
+	"applicationToken": "12345",
+	"exportTemplates": {
+		"campaign": "/templates/Campaign.xlsx",
+		"release": "/templates/Release.xlsx",
+		"track": "/templates/Track.xlsx",
+		"work": "/templates/Work.xlsx",
+		"payee": "/templates/Payee.xlsx",
+		"contract": "/templates/Contract.xlsx"
+	},
+	"importTemplates": {
+		"campaign": [{ "key": "_id" }, { "key": "title" }, { "key": "artist" }, { "key": "identifier" }, { "key": "releaseCatNo" }, { "key": "trackIsrc" }, { "key": "workIdentifer" }],
+		"release": [{ "key": "_id" }, { "key": "title" }, { "key": "version" }, { "key": "artist" }, { "key": "catNo" }, { "key": "barcode" }, { "key": "releaseDate" }, { "key": "format" }, { "key": "priceCategory" }, { "key": "dealerPrice" }, { "key": "mcpsId" }, { "key": "exemptFromMechanicals" }, { "key": "aliases" }, { "key": "track_id" }, { "key": "track_title" }, { "key": "track_version" }, { "key": "track_artist" }, { "key": "track_isrc" }, { "key": "track_pLine" }, { "key": "track_aliases" } ],
+		"track": [{ "key": "_id" }, { "key": "title" }, { "key": "version" }, { "key": "artist" }, { "key": "isrc" }, { "key": "pLine" }, { "key": "aliases" }],
+		"work": [{ "key": "_id" }, { "key": "title" }, { "key": "composer" }, { "key": "identifier" }, { "key": "aliases" }],
+		"payee": [{ "key": "_id" }, { "key": "name" }, { "key": "address" }, { "key": "country" }, { "key": "vatNo" }, { "key": "bankName" }, { "key": "bankAddress" }, { "key": "accountNo" }, { "key": "sortCode" }, { "key": "iban" }],
+		"contract": [{ "key": "_id" }, { "key": "name" }, { "key": "accountingPeriod" }, { "key": "type" }, { "key": "minPayout" }, { "key": "payeeId" }],
+		"sale": [{ "key": "contractName" }, { "key": "territory" }, { "key": "channel" }, { "key": "configration" }, { "key": "priceCategory" }, { "key": "type" }, { "key": "rate" }, { "key": "unitDeduction" }, { "key": "reserve" }],
+		"return": [{ "key": "contractName" }, { "key": "territory" }, { "key": "channel" }, { "key": "configration" }, { "key": "priceCategory" }, { "key": "type" }, { "key": "rate" }, { "key": "unitDeduction" }, { "key": "reserve" }],
+		"cost": [{ "key": "contractName" }, { "key": "territory" }, { "key": "type" }, { "key": "rate" }],
+		"mechanical": [{ "key": "contractName" }, { "key": "territory" }, { "key": "rate" }],
+		"reserve": [{ "key": "contractName" }, { "key": "rate" }]
+	}
+}
